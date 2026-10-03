@@ -54,7 +54,7 @@ h1{font-family:var(--font-display);font-weight:700;font-size:clamp(44px,7vw,76px
 .quick-text{font-size:13px;line-height:1.5;color:var(--ink-soft);margin:6px 0 0}
 .quick-time{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-top:10px;display:block}
 .quick-card:hover{border-color:var(--line-strong)}
-.sig-header{height:44px;width:auto;display:block}
+.sig-header{height:44px;width:auto;display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
 .mk-img{height:38px;width:38px;display:block;color:var(--mk,#F0F6FC)}
 .sig-footer{height:84px;width:auto;display:block}
 [data-theme="dark"] img.sig-header,[data-theme="dark"] img.sig-footer,[data-theme="dark"] img.mk-img{filter:invert(1)}
@@ -136,7 +136,8 @@ body{padding-bottom:0}
 .share-box{background:var(--ground-pure);border:1px solid var(--line);padding:20px;margin-top:16px}
 .share-box p{font-size:14px;line-height:1.6;color:var(--ink-soft);margin:0}
 @media (max-width:680px){.dif-grid,.dif-grid.tri{grid-template-columns:1fr}.timeline{flex-direction:column}.timeline-item{border-top:none;border-left:1.5px solid var(--line-strong);padding:0 0 28px 20px}.timeline-item::before{top:0;left:-4.25px}.proof{grid-template-columns:1fr}.proof-cell{border-left:none;border-top:1px solid var(--line)}.proof-cell:first-child{border-top:none}}
-@media (max-width:560px){.wrap{padding:0 20px}.site-header{padding:12px 20px}.nav{display:none}.sig-header{height:36px}.lockup{gap:12px}.lockup-txt span.hide-m{display:none}}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:560px){.wrap{padding:0 20px}.site-header{padding:12px 20px}.nav{display:none}.sig-header{height:36px}.lockup{gap:12px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
@@ -145,7 +146,6 @@ body{padding-bottom:0}
 <div class="lockup">
 <img class="mk-img" src="assets/slyv-mark-s.svg" alt="Slyv Solutions — S" width="38" height="38">
 <img class="sig-header" src="assets/slyv-signature.svg" alt="Slyv Solutions" height="44">
-<div class="lockup-txt"><strong>SLYV SOLUTIONS</strong><br><span class="hide-m">DOC. TÉC. 001 — GUIA DE DENÚNCIA — REV. 1.0</span></div>
 </div>
 <nav class="nav" aria-label="Navegação">
 <a href="#passo">PASSO A PASSO</a>
