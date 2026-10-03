@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMO DENUNCIAR SITE GRINGO COM CONTEÚDO DE ABUSO — GUIA COMPLETO | SLYV SOLUTIONS</title>
+<meta name="description" content="Tutorial passo a passo para denunciar site com conteúdo de abuso pelo celular, sem abrir o site, sem cometer crime. Canal oficial SaferNet + PF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* TOKENS — SLYV SOLUTIONS / TEMA ESCURO (fonte: project/tokens.css) */
+:root,[data-theme="dark"]{
+--ground:#0D1117;--ground-pure:#010409;--ground-subtle:#161B22;--ground-elevated:#161B22;
+--ink:#F0F6FC;--ink-soft:#B1BAC4;--ink-muted:#8B949E;
+--line:#30363D;--line-subtle:#161B22;--line-strong:#F0F6FC;
+--lime:#C6FF3D;--on-lime:#0D1117;--lime-dim:rgba(198,255,61,.20);--lime-glow:rgba(198,255,61,.45);--lime-border:#7CB800;
+--focus-ring:var(--lime);
+--status-ok:var(--lime);--status-wait:#E8A317;--status-error:#FF6B5E;
+--success-ink:var(--lime);--warn-ink:#F5B84A;--danger-ink:#FF8A80;
+--danger:#FF7A6E;--on-danger:#0D1117;--danger-dim:rgba(255,122,110,.16);--warn-dim:rgba(232,163,23,.16);--diff-add:rgba(198,255,61,.16);
+--scrim:rgba(1,4,9,.72);--glow-lime:0 0 6px #c6ff3d;
+--space-8:8px;--space-12:12px;--space-16:16px;--space-20:20px;--space-24:24px;--space-28:28px;--space-32:32px;--space-40:40px;--space-56:56px;--space-72:72px;--space-80:80px;
+--radius-none:0;--radius-dot:50%;--border-hairline:1px;--border-strong:1.5px;--focus-width:2px;--focus-offset:2px;
+--wrap-max:1120px;--font-display:'Barlow Condensed',sans-serif;--font-corpo:'IBM Plex Sans',sans-serif;--font-mono:'IBM Plex Mono',monospace;
+}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:90px}
+*{box-sizing:border-box}html,body{margin:0}
+body{background-color:var(--ground);background-image:linear-gradient(to right,var(--line-subtle) 1px,transparent 1px),linear-gradient(to bottom,var(--line-subtle) 1px,transparent 1px);background-size:32px 32px;color:var(--ink);font-family:var(--font-corpo);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap-max);margin:0 auto;padding:0 var(--space-40)}
+.site-header{min-height:76px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 40px;gap:16px;position:sticky;top:0;background:var(--ground);z-index:50}
+.lockup{display:flex;align-items:center;gap:16px}
+.mk-mark{font-family:var(--font-display);font-weight:700;font-size:28px;line-height:1;border:1.5px solid var(--line-strong);width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.lockup-txt{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);line-height:1.6}
+.lockup-txt strong{color:var(--ink);font-weight:500}
+.nav{display:flex;gap:22px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin:0 0 20px}
+.eyebrow::before{content:"";display:inline-block;width:5px;height:5px;background:var(--lime);outline:1px solid var(--line-strong);margin-right:8px;vertical-align:1px}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(44px,7vw,76px);line-height:.94;letter-spacing:-.02em;text-transform:uppercase;margin:0;max-width:16ch}
+.lede{font-family:var(--font-corpo);font-size:17px;line-height:1.55;color:var(--ink-soft);max-width:46ch;margin:24px 0 0}
+.cta-row{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px;display:inline-block;border-radius:0;cursor:pointer;min-height:44px;line-height:1.4}
+.btn-primary{background:var(--lime);color:var(--on-lime);border:none}
+.quick-start{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:28px}
+.quick-card{position:relative;border:1px solid var(--line);background:var(--ground-elevated);padding:18px 16px 16px;display:block}
+.quick-card::before{content:"";position:absolute;top:0;left:0;width:12px;height:12px;border-top:1.5px solid var(--line-strong);border-left:1.5px solid var(--line-strong)}
+.quick-num{font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1;color:var(--ink);display:block}
+.quick-num em{font-style:normal;background:var(--lime);color:var(--on-lime);padding:0 8px}
+.quick-title{font-family:var(--font-display);font-weight:700;font-size:18px;text-transform:uppercase;margin:8px 0 0;color:var(--ink)}
+.quick-text{font-size:13px;line-height:1.5;color:var(--ink-soft);margin:6px 0 0}
+.quick-time{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-top:10px;display:block}
+.quick-card:hover{border-color:var(--line-strong)}
+.sig-header{height:44px;width:auto;display:block}
+.mk-img{height:38px;width:38px;display:block;color:var(--mk,#F0F6FC)}
+.sig-footer{height:84px;width:auto;display:block}
+[data-theme="dark"] img.sig-header,[data-theme="dark"] img.sig-footer,[data-theme="dark"] img.mk-img{filter:invert(1)}
+.sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ground-pure);border-top:1px solid var(--line-strong);padding:10px 16px calc(10px + env(safe-area-inset-bottom));gap:10px}
+.sticky-cta .btn{flex:1;text-align:center}
+body{padding-bottom:0}
+@media (max-width:680px){.quick-start{grid-template-columns:1fr}.sticky-cta{display:flex}body{padding-bottom:76px}}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-strong)}
+.btn-ghost:hover{background:var(--ground-subtle)}
+.btn-danger{background:var(--danger);color:var(--on-danger);border:none}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:var(--focus-width) solid var(--focus-ring);outline-offset:var(--focus-offset)}
+.aviso{border:1px solid var(--line-strong);background:var(--ground-elevated);padding:32px 28px;margin-top:32px;position:relative}
+.aviso::before,.aviso::after{content:"";position:absolute;width:12px;height:12px;border:0 solid var(--line-strong)}
+.aviso::before{top:-1px;left:-1px;border-top-width:1.5px;border-left-width:1.5px}
+.aviso::after{right:-1px;bottom:-1px;border-right-width:1.5px;border-bottom-width:1.5px}
+.aviso.danger{border-color:var(--danger)}
+.aviso-tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--danger-ink);border:1px solid var(--danger);padding:3px 8px;display:inline-block;margin-bottom:14px}
+.aviso-title{font-family:var(--font-display);font-weight:700;font-size:20px;text-transform:uppercase;margin:0 0 10px}
+.aviso p,.aviso li{font-size:14px;line-height:1.5;color:var(--ink-soft)}
+.aviso strong{color:var(--ink)}
+.aviso ol,.aviso ul{margin:10px 0 0;padding-left:20px}
+.sistema-section{border-top:1px solid var(--line);padding:56px 0}
+.sys-stamp{display:flex;align-items:baseline;gap:14px;margin:0 0 20px;flex-wrap:wrap}
+.sys-stamp .eyebrow{margin:0}
+.sys-status{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);border:1px solid var(--line);padding:3px 8px}
+.sec-title{font-family:var(--font-display);font-weight:700;font-size:34px;color:var(--ink);margin:8px 0 0;text-transform:uppercase;max-width:22ch}
+.sec-lede{font-size:14px;line-height:1.5;color:var(--ink-soft);max-width:70ch;margin:12px 0 0}
+.dif-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+.dif-grid.tri{grid-template-columns:1fr 1fr 1fr}
+.dif-card{position:relative;padding:22px 22px 24px;background:transparent}
+.dif-card::before,.dif-card::after{content:"";position:absolute;width:12px;height:12px;border:0 solid var(--line-strong)}
+.dif-card::before{top:0;left:0;border-top-width:1.5px;border-left-width:1.5px}
+.dif-card::after{right:0;bottom:0;border-right-width:1.5px;border-bottom-width:1.5px}
+.dif-card.alert{border:1px solid var(--danger)}
+.dif-id{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 6px;text-transform:uppercase}
+.dif-id::before{content:"";display:inline-block;width:5px;height:5px;background:var(--lime);outline:1px solid var(--line-strong);margin-right:8px;vertical-align:1px}
+.dif-card.alert .dif-id::before{background:var(--danger)}
+.dif-title{font-family:var(--font-display);font-weight:700;font-size:20px;text-transform:uppercase;margin:0}
+.dif-text{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:10px 0 0}
+.dif-text strong{color:var(--ink)}
+.dif-text code{font-family:var(--font-mono);font-size:12px;background:var(--ground-subtle);padding:1px 6px;color:var(--ink)}
+.timeline{display:flex;gap:0;margin-top:44px}
+.timeline-item{position:relative;flex:1;border-top:1.5px solid var(--line-strong);padding:22px 24px 0 0}
+.timeline-item::before{content:"";position:absolute;top:-4.25px;left:0;width:7px;height:7px;background:var(--lime);outline:1px solid var(--line-strong)}
+.timeline-id{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 6px;text-transform:uppercase}
+.timeline-title{font-family:var(--font-display);font-weight:700;font-size:18px;text-transform:uppercase;margin:0}
+.timeline-text{font-size:13px;line-height:1.5;color:var(--ink-soft);margin:10px 0 0}
+.timeline-text strong{color:var(--ink)}
+.technical-terminal{background:var(--ground-elevated);color:var(--ink);border:1px solid var(--line);padding:32px 28px;margin-top:32px;position:relative}
+.technical-terminal::before,.technical-terminal::after{content:"";position:absolute;width:12px;height:12px;border:0 solid var(--line-strong);pointer-events:none}
+.technical-terminal::before{top:-1px;left:-1px;border-top-width:1.5px;border-left-width:1.5px}
+.technical-terminal::after{right:-1px;bottom:-1px;border-right-width:1.5px;border-bottom-width:1.5px}
+.terminal-bar{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;color:var(--lime);margin-bottom:20px;text-transform:uppercase;flex-wrap:wrap}
+.terminal-dot{width:7px;height:7px;background:var(--lime);border-radius:50%;outline:1px solid var(--line-strong);box-shadow:var(--glow-lime)}
+.terminal-code{font-family:var(--font-mono);font-size:12px;line-height:1.6;color:var(--ink);white-space:pre-wrap;background:var(--ground-pure);border:1px solid var(--line);padding:16px;margin:0}
+.copy-row{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+.proof{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:32px}
+.proof-cell{border-left:1px solid var(--line);padding:32px 28px}
+.proof-cell:first-child{border-left:none}
+.proof-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.proof-title{font-family:var(--font-display);font-weight:700;font-size:34px;color:var(--ink);margin:8px 0 0}
+.proof-text{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:10px 0 0}
+.check-list{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:10px}
+.check-list li{border:1px solid var(--line);padding:14px 16px;font-size:14px;color:var(--ink-soft);display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.check-list li.done{border-color:var(--lime);color:var(--ink)}
+.check-list input{accent-color:var(--lime);width:18px;height:18px;margin-top:2px}
+.faq{margin-top:24px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{font-family:var(--font-display);font-weight:700;font-size:18px;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.faq p{font-size:14px;line-height:1.5;color:var(--ink-soft)}
+.faq p strong{color:var(--ink)}
+.site-footer{border-top:1px solid var(--line);padding:44px 0 56px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.footer-line{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.footer-stamp{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted)}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.toc a{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:8px 12px;color:var(--ink-soft)}
+.toc a:hover{color:var(--ink);border-color:var(--line-strong)}
+.kbd{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line-strong);padding:2px 8px;color:var(--ink)}
+.share-box{background:var(--ground-pure);border:1px solid var(--line);padding:20px;margin-top:16px}
+.share-box p{font-size:14px;line-height:1.6;color:var(--ink-soft);margin:0}
+@media (max-width:680px){.dif-grid,.dif-grid.tri{grid-template-columns:1fr}.timeline{flex-direction:column}.timeline-item{border-top:none;border-left:1.5px solid var(--line-strong);padding:0 0 28px 20px}.timeline-item::before{top:0;left:-4.25px}.proof{grid-template-columns:1fr}.proof-cell{border-left:none;border-top:1px solid var(--line)}.proof-cell:first-child{border-top:none}}
+@media (max-width:560px){.wrap{padding:0 20px}.site-header{padding:12px 20px}.nav{display:none}.sig-header{display:none}.lockup-txt span.hide-m{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="lockup">
+<img class="mk-img" src="assets/slyv-mark-s.svg" alt="Slyv Solutions — S" width="38" height="38">
+<img class="sig-header" src="assets/slyv-signature.svg" alt="Slyv Solutions" height="44">
+<div class="lockup-txt"><strong>SLYV SOLUTIONS</strong><br><span class="hide-m">DOC. TÉC. 001 — GUIA DE DENÚNCIA — REV. 1.0</span></div>
+</div>
+<nav class="nav" aria-label="Navegação">
+<a href="#passo">PASSO A PASSO</a>
+<a href="#pf">POLÍCIA FEDERAL</a>
+<a href="#modelo">MODELO PRONTO</a>
+<a href="#check">CHECKLIST</a>
+</nav>
+</header>
+
+<main class="wrap">
+<!-- HERO -->
+<section class="hero">
+<p class="eyebrow">DOC. TÉC. 001 — DENÚNCIA SEGURA — MODO ESCURO</p>
+<h1>COMO DENUNCIAR SITE GRINGO COM CONTEÚDO DE ABUSO</h1>
+<p class="lede">Tutorial completo para leigos no celular. Sem abrir o site. Sem compartilhar link. Anônimo, em 5 minutos, nos canais oficiais: SaferNet + Polícia Federal.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://new.safernet.org.br/denuncie" target="_blank" rel="noopener">DENUNCIAR NA SAFERNET</a>
+<a class="btn btn-ghost" href="#passo">VER PASSO A PASSO</a>
+</div>
+<div class="quick-start" aria-label="Comece aqui em 3 toques">
+<a class="quick-card" href="#maos"><span class="quick-num"><em>1</em></span><span class="quick-title">COPIE SEM ABRIR</span><span class="quick-text">Segure o link e toque em Copiar. Toque curto abre — não faça isso.</span><span class="quick-time">30 SEGUNDOS</span></a>
+<a class="quick-card" href="#passo"><span class="quick-num"><em>2</em></span><span class="quick-title">DENUNCIE ANÔNIMO</span><span class="quick-text">Cole só no denuncie.org.br. Sem nome, sem CPF, sem print do site.</span><span class="quick-time">5 MINUTOS</span></a>
+<a class="quick-card" href="#chamar"><span class="quick-num"><em>3</em></span><span class="quick-title">CHAME NO PRIVADO</span><span class="quick-text">Compartilhe este tutorial, nunca o link do crime. Peça o ticket.</span><span class="quick-time">2 MINUTOS</span></a>
+</div>
+<div class="toc" aria-label="Índice">
+<a href="#nao-abrir">01 — NÃO ABRA</a><a href="#maos">02 — O QUE TER EM MÃOS</a><a href="#passo">03 — SAFERNET</a><a href="#pf">04 — PF</a><a href="#disque">05 — DISQUE 100</a><a href="#gringo">06 — SITE GRINGO</a><a href="#chamar">07 — CHAMAR AJUDA</a><a href="#modelo">08 — MODELO</a><a href="#abriu">09 — ABRIU SEM QUERER</a><a href="#ip">10 — IP E DADOS</a><a href="#apoio">11 — APOIO</a><a href="#check">12 — CHECKLIST + FAQ</a>
+</div>
+</section>
+
+<!-- AVISO CRÍTICO -->
+<div class="aviso danger" role="alert">
+<span class="aviso-tag">AVISO CRÍTICO — LEIA ANTES DE TUDO</span>
+<p class="aviso-title">NÃO ABRA. NÃO CLIQUE. NÃO COMPARTILHE.</p>
+<ol>
+<li><strong>NÃO abra o site. NÃO clique no link. NÃO baixe nada. NÃO tire print do site. NÃO poste em grupo, status ou rede social.</strong></li>
+<li>No Brasil, <strong>possuir, guardar, compartilhar ou divulgar imagem de abuso sexual infantil é crime</strong> (Art. 241-A e 241-B do ECA), mesmo para alertar. A Lei 15.487/2026 aumentou as penas e inclui material feito com IA.</li>
+<li>O jeito certo: <strong>copiar o link SEM abrir e colar SÓ nos formulários oficiais</strong> (SaferNet, PF). É anônimo e leva 5 minutos.</li>
+</ol>
+</div>
+
+<!-- 01 -->
+<section class="sistema-section" id="nao-abrir">
+<div class="sys-stamp"><p class="eyebrow">ITEM 01</p><span class="sys-status">RISCO JURÍDICO + TÉCNICO</span></div>
+<h2 class="sec-title">POR QUE VOCÊ NÃO DEVE ABRIR O SITE</h2>
+<p class="sec-lede">Denuncie o LINK, não o CONTEÚDO. Você não precisa ver nada. A polícia acessa de forma controlada e documentada.</p>
+<div class="dif-grid tri">
+<div class="dif-card alert"><span class="dif-id">01.1 — JURÍDICO</span><h3 class="dif-title">POSSE E DIVULGAÇÃO É CRIME</h3><p class="dif-text">Guardar no celular (cache, download automático) pode ser posse. Encaminhar link ou print em grupo pode ser divulgação. <strong>Não importa a intenção. A lei pune o ato.</strong></p></div>
+<div class="dif-card"><span class="dif-id">01.2 — TÉCNICO</span><h3 class="dif-title">VÍRUS E EXPOSIÇÃO</h3><p class="dif-text">Site de crime tem vírus e espião. O dono vê seu IP e cidade aproximada. <strong>Clicar várias vezes alerta o criminoso</strong>, que tira o site do ar e apaga provas.</p></div>
+<div class="dif-card"><span class="dif-id">01.3 — INVESTIGAÇÃO</span><h3 class="dif-title">PROVA FORMAL</h3><p class="dif-text">Seu print não vale como prova formal. SaferNet e PF preservam com ata, hash e log. <strong>Acesso descontrolado destrói a prova.</strong></p></div>
+</div>
+</section>
+
+<!-- 02 -->
+<section class="sistema-section" id="maos">
+<div class="sys-stamp"><p class="eyebrow">ITEM 02</p><span class="sys-status">SEM ABRIR NADA</span></div>
+<h2 class="sec-title">O QUE VOCÊ PRECISA TER EM MÃOS</h2>
+<p class="sec-lede">Só 3 coisas, tudo sem clicar. Você NÃO precisa de IP, dono ou print do site.</p>
+<div class="dif-grid tri">
+<div class="dif-card"><span class="dif-id">02.1 — URL</span><h3 class="dif-title">O LINK COMPLETO</h3><p class="dif-text">No WhatsApp: <strong>segure o dedo 2 segundos sobre o link e toque em Copiar</strong>. Toque curto abre — não faça isso. Desative download automático: <span class="kbd">CONFIG › ARMAZENAMENTO E DADOS</span> e desmarque tudo.</p></div>
+<div class="dif-card"><span class="dif-id">02.2 — ORIGEM</span><h3 class="dif-title">PRINT DA CONVERSA</h3><p class="dif-text">Print da <strong>conversa onde recebeu</strong> (não do site), com data e hora visíveis. Ex: recebi da pessoa X no dia Y pelo WhatsApp.</p></div>
+<div class="dif-card"><span class="dif-id">02.3 — RELATO</span><h3 class="dif-title">3 LINHAS SIMPLES</h3><p class="dif-text">Quem mandou, quando, por que suspeita. Ex: minha irmã encaminhou, disse que tem abuso infantil, não abri. <strong>Sem detalhe gráfico.</strong></p></div>
+</div>
+</section>
+
+<!-- 03 -->
+<section class="sistema-section" id="passo">
+<div class="sys-stamp"><p class="eyebrow">ITEM 03 — CANAL PRINCIPAL</p><span class="sys-status">5 MIN — ANÔNIMO</span></div>
+<h2 class="sec-title">PASSO A PASSO SAFERNET</h2>
+<p class="sec-lede">SaferNet Brasil (<strong>denuncie.org.br</strong>) tem convênio com o Ministério Público Federal desde 2017. Recebe site gringo e encaminha para hotlines internacionais (INHOPE). Analistas de Direito + TI conferem todo dia.</p>
+<div class="timeline">
+<div class="timeline-item"><span class="timeline-id">PASSO 1</span><h3 class="timeline-title">ABRA O SITE OFICIAL</h3><p class="timeline-text">No Chrome/Safari digite <strong>denuncie.org.br</strong> ou <strong>new.safernet.org.br/denuncie</strong>. Confira o cadeado na barra de endereço.</p></div>
+<div class="timeline-item"><span class="timeline-id">PASSO 2</span><h3 class="timeline-title">TOQUE EM DENUNCIE</h3><p class="timeline-text">Na página inicial, toque em <strong>Denuncie / Fazer denúncia</strong>.</p></div>
+<div class="timeline-item"><span class="timeline-id">PASSO 3</span><h3 class="timeline-title">ESCOLHA A CATEGORIA</h3><p class="timeline-text">Marque <strong>Pornografia infantil / Imagens de abuso e exploração sexual infantil</strong>. Na dúvida, escolha a que menciona criança. O analista reclassifica.</p></div>
+<div class="timeline-item"><span class="timeline-id">PASSO 4</span><h3 class="timeline-title">COLE O LINK</h3><p class="timeline-text">Cole a URL no campo indicado. <strong>Uma URL por denúncia.</strong> Se tem 3 páginas, faça 3 denúncias.</p></div>
+<div class="timeline-item"><span class="timeline-id">PASSO 5</span><h3 class="timeline-title">DESCREVA + ENVIE</h3><p class="timeline-text">Cole o modelo do item 08. Envie e <strong>anote o número de ticket</strong>. Tire print só do protocolo.</p></div>
+</div>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://new.safernet.org.br/denuncie" target="_blank" rel="noopener">ABRIR DENUNCIE.ORG.BR</a>
+<a class="btn btn-ghost" href="https://www.safernet.org.br/site/institucional/projetos/cnd/como-funciona" target="_blank" rel="noopener">COMO FUNCIONA</a>
+</div>
+</section>
+
+<!-- 04 -->
+<section class="sistema-section" id="pf">
+<div class="sys-stamp"><p class="eyebrow">ITEM 04 — REFORÇO</p><span class="sys-status">+ 5 MIN</span></div>
+<h2 class="sec-title">POLÍCIA FEDERAL</h2>
+<p class="sec-lede">A SaferNet já basta para começar. A PF reforça e pode acionar a Interpol. Cite o ticket da SaferNet para evitar retrabalho.</p>
+<div class="dif-grid">
+<div class="dif-card"><span class="dif-id">04.1 — ONLINE</span><h3 class="dif-title">OUVIDORIA DA PF</h3><p class="dif-text">Acesse <strong>gov.br/pf › Fale Conosco / Ouvidoria › Denúncia de crime › Crimes cibernéticos</strong>. Cole a mesma URL + mesmo texto + ticket SaferNet. Pode ser anônima na ouvidoria.</p></div>
+<div class="dif-card"><span class="dif-id">04.2 — PRESENCIAL</span><h3 class="dif-title">DELEGACIA</h3><p class="dif-text">Se conhece vítima ou tem mais dados: vá à <strong>PF ou Delegacia de Crimes Cibernéticos</strong>. Leve link anotado + print da conversa (não do site) + ticket. <strong>Você não precisa levar IP.</strong></p></div>
+</div>
+<div class="cta-row"><a class="btn btn-ghost" href="https://www.gov.br/pf" target="_blank" rel="noopener">ABRIR GOV.BR/PF</a></div>
+</section>
+
+<!-- 05 -->
+<section class="sistema-section" id="disque">
+<div class="sys-stamp"><p class="eyebrow">ITEM 05</p><span class="sys-status">VÍTIMA IDENTIFICADA</span></div>
+<h2 class="sec-title">DISQUE 100 + CONSELHO TUTELAR</h2>
+<p class="sec-lede">Se há indício de vítima brasileira conhecida (cidade, escola, família), além da SaferNet faça:</p>
+<div class="proof">
+<div class="proof-cell"><div class="proof-label">CANAL 01</div><div class="proof-title">100</div><p class="proof-text">Disque 100, grátis, 24h, anônimo. Diga: tenho o link, não acessei. Eles registram e encaminham.</p></div>
+<div class="proof-cell"><div class="proof-label">CANAL 02</div><div class="proof-title">190</div><p class="proof-text">Abuso acontecendo AGORA: ligue 190 imediatamente.</p></div>
+<div class="proof-cell"><div class="proof-label">CANAL 03</div><div class="proof-title">188</div><p class="proof-text">CVV 188, apoio emocional 24h. Helpline (helpline.org.br) orienta — denúncia é no denuncie.org.br.</p></div>
+</div>
+</section>
+
+<!-- 06 -->
+<section class="sistema-section" id="gringo">
+<div class="sys-stamp"><p class="eyebrow">ITEM 06</p><span class="sys-status">JURISDIÇÃO</span></div>
+<h2 class="sec-title">SITE GRINGO: PRECISO DENUNCIAR FORA?</h2>
+<p class="sec-lede"><strong>Não é obrigatório. A SaferNet já encaminha para a hotline do país de hospedagem via rede INHOPE</strong> e mantém cópia para MPF/PF. Crime contra criança pode ser investigado no Brasil mesmo com servidor fora, via Interpol.</p>
+<div class="dif-grid">
+<div class="dif-card"><span class="dif-id">06.1 — OPCIONAL EUA</span><h3 class="dif-title">NCMEC CYBERTIPLINE</h3><p class="dif-text">Maioria hospedada nos EUA: <strong>report.cybertip.org</strong>. Formulário em inglês, aceita URL, anônimo. Só URL, nada de conteúdo. Modelo em inglês no item 08.</p></div>
+<div class="dif-card"><span class="dif-id">06.2 — OPCIONAL EU/UK</span><h3 class="dif-title">IWF / INHOPE</h3><p class="dif-text">UK/Europa: <strong>report.iwf.org.uk</strong> ou busque a hotline em <strong>inhope.org › Report</strong>. <strong>NÃO denuncie direto para a hospedagem</strong> — isso alerta o criminoso e destrói prova.</p></div>
+</div>
+</section>
+
+<!-- 07 -->
+<section class="sistema-section" id="chamar">
+<div class="sys-stamp"><p class="eyebrow">ITEM 07</p><span class="sys-status">SEM COMETER CRIME</span></div>
+<h2 class="sec-title">COMO CHAMAR MAIS GENTE</h2>
+<p class="sec-lede">Postar link publicamente é crime e espalha o abuso. Não peça para a galera entrar no site para ver.</p>
+<div class="dif-grid">
+<div class="dif-card alert"><span class="dif-id">07.1 — NUNCA</span><h3 class="dif-title">O QUE NUNCA FAZER</h3><p class="dif-text">Postar link, print, vídeo ou nome pesquisável. Pedir mutirão de acesso. Flood de acesso avisa o criminoso e derruba a prova.</p></div>
+<div class="dif-card"><span class="dif-id">07.2 — FAÇA ASSIM</span><h3 class="dif-title">NO PÚBLICO + NO PRIVADO</h3><p class="dif-text"><strong>Público:</strong> poste este tutorial, chame no privado. <strong>Privado:</strong> só para maior de idade que pedir, passe a URL com aviso: cole SÓ no denuncie.org.br, não abra, não repasse. Peça o nº do ticket. 10 a 20 pessoas de confiança valem mais que 500 acessos.</p></div>
+</div>
+<div class="technical-terminal">
+<div class="terminal-bar"><span class="terminal-dot"></span>TEXTO PRONTO — COPIE E POSTE NO PÚBLICO</div>
+<p class="terminal-code" id="shareText">Pessoal, descobri um site gringo com conteúdo criminoso de abuso sexual (não vou postar o link aqui porque divulgar é crime e espalha o abuso).
+
+Quem quiser ajudar a denunciar pelo celular em 5 min, me chama NO PRIVADO que eu explico sem expor ninguém, ou acesse direto denuncie.org.br e me peça o passo a passo.
+
+IMPORTANTE: não procurem o site, não cliquem em link suspeito, não compartilhem print. Denunciem SÓ pelo canal oficial e anônimo. Cada denúncia conta.</p>
+<div class="copy-row"><button class="btn btn-primary" data-copy="shareText">COPIAR TEXTO</button></div>
+</div>
+</section>
+
+<!-- 08 -->
+<section class="sistema-section" id="modelo">
+<div class="sys-stamp"><p class="eyebrow">ITEM 08</p><span class="sys-status">COPIAR + COLAR</span></div>
+<h2 class="sec-title">MODELO PRONTO PARA A DENÚNCIA</h2>
+<p class="sec-lede">Preencha os colchetes e cole no campo Descrição da SaferNet / PF. Sem detalhe gráfico.</p>
+<div class="technical-terminal">
+<div class="terminal-bar"><span class="terminal-dot"></span>MODELO PT-BR — SAFERNET / PF</div>
+<p class="terminal-code" id="modelPT">Recebi este link via [WhatsApp/Telegram] no dia [DD/MM/AAAA] encaminhado por [conhecido].
+
+Não acessei o conteúdo diretamente por orientação de segurança, apenas recebi o relato de que contém [imagens/vídeos de abuso e exploração sexual infantil].
+
+URL suspeita: [COLE AQUI A URL COMPLETA SEM ABRIR]
+
+Site aparenta ser estrangeiro (idioma [inglês/outro]). Solicito verificação e encaminhamento à autoridade competente / hotline internacional.
+
+Denúncia feita de forma anônima e de boa-fé. Tenho disponível print da conversa de recebimento com data/hora, sem acesso ao conteúdo interno. Ticket SaferNet correlato (se houver): [XXXXX].</p>
+<div class="copy-row"><button class="btn btn-primary" data-copy="modelPT">COPIAR MODELO PT</button></div>
+</div>
+<div class="technical-terminal">
+<div class="terminal-bar"><span class="terminal-dot"></span>MODEL EN — NCMEC (EUA)</div>
+<p class="terminal-code" id="modelEN">I received this URL via WhatsApp on [DD/MM/YYYY]. I did NOT open it. Reported content: suspected child sexual abuse material. URL: [PASTE FULL URL]. Foreign website. Requesting review. Related SaferNet Brazil report: [XXXXX].</p>
+<div class="copy-row"><button class="btn btn-ghost" data-copy="modelEN">COPIAR MODEL EN</button></div>
+</div>
+</section>
+
+<!-- 09 + 10 -->
+<section class="sistema-section" id="abriu">
+<div class="sys-stamp"><p class="eyebrow">ITEM 09 / 10</p><span class="sys-status">CASOS ESPECIAIS</span></div>
+<h2 class="sec-title">ABRIU SEM QUERER? TEM IP?</h2>
+<div class="dif-grid">
+<div class="dif-card"><span class="dif-id">09 — ACESSO ACIDENTAL</span><h3 class="dif-title">FECHE E DENUNCIE</h3><p class="dif-text">Feche a aba. Não salve, não printe, não encaminhe. Apague Downloads + cache (Chrome › Histórico › Limpar). No WhatsApp, desative download auto e apague sem abrir. <strong>Denuncie mesmo assim</strong> e escreva: acesso acidental em [data], fechado imediatamente. Não volte ao site para investigar.</p></div>
+<div class="dif-card" id="ip"><span class="dif-id">10 — IP / HOSPEDAGEM</span><h3 class="dif-title">ANEXE, NÃO INVESTIGUE</h3><p class="dif-text"><strong>PODE:</strong> incluir em Informações adicionais: IP observado em [data], host aparente, fonte WHOIS/RDAP pública sem acesso ao conteúdo. <strong>NÃO PODE:</strong> invadir, scan, DDoS, expor dono (doxxing), contratar hacker. Isso é crime (Art. 154-A CP) e anula prova. <strong>Leigo: ignore IP.</strong> A PF descobre sozinha.</p></div>
+</div>
+</section>
+
+<!-- 11 -->
+<section class="sistema-section" id="apoio">
+<div class="sys-stamp"><p class="eyebrow">ITEM 11</p><span class="sys-status">PESSOAS PRIMEIRO</span></div>
+<h2 class="sec-title">CUIDADOS EMOCIONAIS</h2>
+<p class="sec-lede">Você não precisa ver nada para ajudar. Denunciar o link já é a ajuda máxima.</p>
+<div class="dif-grid tri">
+<div class="dif-card"><span class="dif-id">11.1 — FAMÍLIA</span><h3 class="dif-title">ACOLHA, NÃO INVESTIGUE</h3><p class="dif-text">Não peça para sua irmã abrir de novo para confirmar. Oriente ela a denunciar igual e apagar a conversa após anotar a URL.</p></div>
+<div class="dif-card"><span class="dif-id">11.2 — APOIO</span><h3 class="dif-title">CVV 188</h3><p class="dif-text">Ligação e chat 24h. CAPS da sua cidade. Helpline orienta como conversar com jovens.</p></div>
+<div class="dif-card"><span class="dif-id">11.3 — LIMITE</span><h3 class="dif-title">SAIA DO ASSUNTO</h3><p class="dif-text">Fez a denúncia, guardou o ticket, saia do assunto hoje. Não fique remoendo nem pesquisando o site.</p></div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="sistema-section" id="check">
+<div class="sys-stamp"><p class="eyebrow">ITEM 12</p><span class="sys-status">FINALIZE AGORA</span></div>
+<h2 class="sec-title">CHECKLIST + FAQ</h2>
+<p class="sec-lede">Marque ao concluir. Fica salvo neste aparelho.</p>
+<ul class="check-list" id="checklist">
+<li><input type="checkbox"> Copiei a URL SEM abrir (segurei e toquei em Copiar)</li>
+<li><input type="checkbox"> Desativei download automático do WhatsApp</li>
+<li><input type="checkbox"> Denunciei na SaferNet e anotei o ticket</li>
+<li><input type="checkbox"> Reforcei na PF citando o ticket</li>
+<li><input type="checkbox"> NÃO postei link ou print em lugar nenhum</li>
+<li><input type="checkbox"> Chamei ajuda SÓ no privado, com o texto do item 07</li>
+<li><input type="checkbox"> Apaguei mídia automática e fechei abas</li>
+<li><input type="checkbox"> Guardei print do protocolo (não do site)</li>
+</ul>
+<div class="faq">
+<details open><summary>PRECISA SE IDENTIFICAR?</summary><p>Não na SaferNet — <strong>100% anônima</strong>. Na ouvidoria da PF pode pedir ID, por isso faça as duas: SaferNet anônima + PF complemento.</p></details>
+<details><summary>QUANTAS DENÚNCIAS PARA DERRUBAR?</summary><p>Não tem número mágico. <strong>Uma bem feita já abre processo.</strong> Várias independentes (pessoas diferentes, mesmo link) aumentam a prioridade.</p></details>
+<details><summary>SITE GRINGO DÁ EM ALGUMA COISA?</summary><p>Sim. <strong>SaferNet → INHOPE → hotline local → polícia local + PF/Interpol.</strong> Demora semanas ou meses. Linchamento virtual não funciona e atrapalha.</p></details>
+<details><summary>DENUNCIAR NO APP RESOLVE?</summary><p>Só se o conteúdo está <strong>dentro</strong> do app (botão Denunciar). Site externo: SaferNet + PF. Uma coisa não substitui a outra.</p></details>
+<details><summary>MUDOU DE ENDEREÇO?</summary><p>Denuncie o novo link do mesmo jeito, citando o antigo: <strong>possível espelho do ticket XXXXX</strong>.</p></details>
+<details><summary>POSSO SER PUNIDO POR DENUNCIAR?</summary><p><strong>Não.</strong> Denúncia anônima de boa-fé não pune, mesmo se não for crime. O crime é divulgar o conteúdo, não denunciar no canal certo.</p></details>
+</div>
+<div class="technical-terminal">
+<div class="terminal-bar"><span class="terminal-dot"></span>FONTES OFICIAIS — CONFERIDAS EM 03/10/2026</div>
+<p class="terminal-code">SaferNet Denúncias: new.safernet.org.br/denuncie — denuncie.org.br
+Como funciona: safernet.org.br/site/institucional/projetos/cnd/como-funciona
+Polícia Federal: gov.br/pf — Disque 100 — Emergência 190 — CVV 188
+Rede mundial: inhope.org — NCMEC EUA: report.cybertip.org — UK: report.iwf.org.uk
+Lei 15.487/2026: penas maiores, inclui IA, administradores de ambientes criminosos.</p>
+<div class="copy-row">
+<a class="btn btn-primary" href="https://new.safernet.org.br/denuncie" target="_blank" rel="noopener">DENUNCIAR AGORA</a>
+<a class="btn btn-ghost" href="https://www.gov.br/pf" target="_blank" rel="noopener">SITE DA PF</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<img class="sig-footer" src="assets/slyv-signature.svg" alt="Slyv Solutions" height="84">
+<div class="footer-line">SLYV SOLUTIONS — DOC. TÉC. 001 — GUIA DE DENÚNCIA SEGURA</div>
+<div class="footer-stamp">DOC_REF: SLYV.DENUNCIA — REV. 1.0 — MODO ESCURO — NÃO SUBSTITUI ORIENTAÇÃO JURÍDICA</div>
+<div class="footer-stamp">TOKENS: GROUND / INK / LIME — CANTOS RETOS — SEM SOMBRA — PT-BR — CAIXA ALTA NOS TÍTULOS</div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(btn){
+btn.addEventListener('click', function(){
+var id = btn.getAttribute('data-copy');
+var el = document.getElementById(id);
+var txt = el ? el.innerText : '';
+navigator.clipboard.writeText(txt).then(function(){
+var old = btn.textContent; btn.textContent = 'COPIADO'; setTimeout(function(){btn.textContent = old;},1800);
+}).catch(function(){btn.textContent = 'SELECIONE E COPIE MANUALMENTE';});
+});
+});
+var boxes = document.querySelectorAll('#checklist input');
+try{
+var saved = JSON.parse(localStorage.getItem('slyv-denuncia-check')||'[]');
+boxes.forEach(function(b,i){ if(saved[i]){b.checked=true;b.closest('li').classList.add('done');} b.addEventListener('change',function(){ b.closest('li').classList.toggle('done',b.checked); var s=[]; boxes.forEach(function(x){s.push(x.checked);}); localStorage.setItem('slyv-denuncia-check',JSON.stringify(s)); }); });
+}catch(e){}
+</script>
+<div class="sticky-cta" role="navigation" aria-label="Ação rápida">
+<a class="btn btn-primary" href="https://new.safernet.org.br/denuncie" target="_blank" rel="noopener">DENUNCIAR NA SAFERNET</a>
+<a class="btn btn-ghost" href="#check">CHECKLIST</a>
+</div>
+</body>
+</html>
